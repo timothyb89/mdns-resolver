@@ -1,7 +1,12 @@
 [package]
 name = "mdns-resolver"
+description = "A simple async legacy mDNS resolver"
 version = "0.1.0"
 edition = "2018"
+license = "MIT"
+keywords = ["mdns"]
+authors = ["Tim Buckley <timothyb89@gmail.com>"]
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
