@@ -30,3 +30,19 @@ appliances, etc).
 
 [oneshot]: https://docs.rs/simple-mdns/0.2.2/simple_mdns/struct.OneShotMdnsResolver.html
 [`homedns`]: https://github.com/timothyb89/homedns
+
+## Usage
+
+The included example utility `mdns-query` can be used to lookup a single
+hostname:
+
+```bash
+$ cargo run -q --features=bins --bin mdns-query linux.local
+linux.local = 192.168.10.104
+```
+
+Take a look at [`mdns-query.rs`] for a simple library usage example. It should
+handle concurrent requests just fine, and `MdnsQuery` is `Clone` for
+multithreaded use.
+
+[`mdns-query.rs`]: ./src/bin/mdns-query.rs
